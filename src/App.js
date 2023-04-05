@@ -11,10 +11,13 @@ function App() {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<MovieGallery />} />
+        <Route path="/MovieGallery" element={<MovieGallery title="Harry Potter" />} />
+        <Route path="/MovieGallery" element={<MovieGallery title="Lord of the Rings" />} />
+        <Route path="/MovieGallery" element={<MovieGallery title="Guardians of the Galaxy" />} />
         <Route path="/TvShows" element={<TVShows />} />
-        <Route path="/movie-details/:movieId" element={<MovieDetails />} />
+        <Route path="/MovieDetails/:movieId" element={<MovieDetails />} />
       </Routes>
+      <MovieGallery />
       <MyFooter />
     </Router>
   );
