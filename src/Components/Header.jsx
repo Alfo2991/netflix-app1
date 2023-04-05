@@ -18,8 +18,8 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link as={Link} to="/TvShows">TV Shows</Nav.Link>
-            <Nav.Link href="#movies">Movies</Nav.Link>
+            <Link to="/TvShows" className="nav-link">TV Shows</Link>      
+                  <Nav.Link href="#movies">Movies</Nav.Link>
             <Nav.Link href="#latest">Latest</Nav.Link>
             <Nav.Link href="#my-list">My List</Nav.Link>
           </Nav>

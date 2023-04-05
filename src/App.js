@@ -1,7 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Header from "./Components/Header";
 import MovieGallery from "./Components/MovieGallery";
 import MyFooter from "./Components/MyFooter";
@@ -11,11 +10,11 @@ function App() {
   return (
     <Router>
       <Header />
-      <Switch>
-        <Route exact path="/" component={MovieGallery} />
-        <Route exact path="/TvShows" component={TVShows} />
-        <Route exact path="/movie-details/:movieId" component={MovieDetails} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<MovieGallery />} />
+        <Route path="/TvShows" element={<TVShows />} />
+        <Route path="/movie-details/:movieId" element={<MovieDetails />} />
+      </Routes>
       <MyFooter />
     </Router>
   );

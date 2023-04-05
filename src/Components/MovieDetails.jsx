@@ -20,7 +20,7 @@ console.error(error);
 };
 const fetchComments = async () => {
     try {
-      const commentsResponse = await fetch(`http://example.com/api/comments/${movieId}`);
+      const commentsResponse = await fetch(`http://www.omdbapi.com/?apikey=ddb6f24&i/comments/${movieId}`);
       if (!commentsResponse.ok) {
         throw new Error("Failed to fetch comments");
       }

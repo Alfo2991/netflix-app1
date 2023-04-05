@@ -17,6 +17,7 @@ class MovieGallery extends React.Component {
     const apiLink = "http://www.omdbapi.com/?apikey=ddb6f24";
     try {
       const response = await fetch(`${apiLink}&s=${this.props.title.toLowerCase()}`);
+      
       if (!response.ok) {
         throw new Error("Failed to fetch movies");
       }
