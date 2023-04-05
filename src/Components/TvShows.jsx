@@ -1,11 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
-const TvShows = () => {
-    const navigate = useNavigate();
-    return (
-        <h2> Welcome on TvShows</h2>
-    )
-}
+const TVShows = () => {
+  return (
+    <div>
+      <h1>TV Shows</h1>
+      <p>Here you can find all the best TV shows</p>
+    </div>
+  );
+};
 
-export default TvShows;
+export default TVShows;

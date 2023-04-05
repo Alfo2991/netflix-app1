@@ -1,5 +1,6 @@
-import React from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -17,7 +18,7 @@ function Header() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/Tv-Shows">TV Shows</Nav.Link>
+            <Nav.Link as={Link} to="/TvShows">TV Shows</Nav.Link>
             <Nav.Link href="#movies">Movies</Nav.Link>
             <Nav.Link href="#latest">Latest</Nav.Link>
             <Nav.Link href="#my-list">My List</Nav.Link>
